@@ -1,0 +1,53 @@
+.vt-header {
+  height: 100px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  position: relative;
+  z-index: 20;
+}
+
+.vt-logo {
+  width: 250px;
+  object-fit: contain;
+  display: block;
+}
+
+.vt-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-left: 85px;
+}
+
+.vt-nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.vt-nav-links a:hover {
+  color: #16b6a7;
+}
+
+.vt-menu-box {
+  width: 96px;
+  height: 100px;
+  background: #69c3b7;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.vt-menu-box span {
+  width: 36px;
+  height: 1.5px;
+  background: #111;
+}
