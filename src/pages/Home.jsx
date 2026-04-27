@@ -1,11 +1,12 @@
 import HeroSection from "../components/home/HeroSection";
+import HeritageSection from "../components/home/HeritageSection";
 
 function Home() {
   return (
-    <div>
-      {/* Hero Section */}
+    <>
       <HeroSection />
-    </div>
+      <HeritageSection />
+    </>
   );
 }
 

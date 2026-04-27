@@ -1,0 +1,166 @@
+.heritage-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 95px 92px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.heritage-left {
+  width: 50%;
+}
+
+.heritage-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5d5d5d;
+  margin-bottom: 10px;
+}
+
+.heritage-left h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.heritage-description {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+}
+
+/* MISSION + VISION */
+.mission-vision {
+  display: flex;
+  gap: 80px;
+}
+
+.mv-box {
+  width: 260px;
+}
+
+.mv-box h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.mv-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.mv-title span {
+  width: 38px;
+  height: 1px;
+  background: #000;
+  display: inline-block;
+}
+
+.mv-title h4 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #000;
+}
+
+.mv-box p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: #666;
+}
+
+/* RIGHT SIDE */
+.heritage-right {
+  width: 43%;
+  position: relative;
+}
+
+.heritage-main-img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  display: block;
+}
+
+.line-img {
+  position: absolute;
+  top: -65px;
+  left: 90px;
+  width: 380px;
+  z-index: 2;
+}
+
+.achievement-card {
+  position: absolute;
+  right: -35px;
+  bottom: -65px;
+  width: 230px;
+  height: 170px;
+  background: #ffffff;
+  border-left: 22px solid #65c7bd;
+  border-top: 22px solid #65c7bd;
+  padding: 45px 20px;
+  z-index: 3;
+}
+
+.achievement-card h3 {
+  font-size: 58px;
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 1.5px #000;
+  line-height: 1;
+}
+
+.achievement-card p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .heritage-section {
+    flex-direction: column;
+    padding: 60px 25px;
+  }
+
+  .heritage-left,
+  .heritage-right {
+    width: 100%;
+  }
+
+  .heritage-left h2 {
+    font-size: 36px;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .heritage-right {
+    margin-top: 40px;
+  }
+
+  .line-img {
+    width: 260px;
+    left: 40px;
+  }
+
+  .achievement-card {
+    right: 0;
+    bottom: -40px;
+  }
+}
