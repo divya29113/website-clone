@@ -1,0 +1,36 @@
+.scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #f5f5f5;
+  padding: 30px 0;
+}
+
+.scroll-text {
+  display: inline-block;
+  animation: scrollMove 15s linear infinite;
+}
+
+.scroll-text span {
+  font-size: 80px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  margin-right: 40px;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.scroll-text span:hover {
+  color: #000;
+  -webkit-text-stroke: 0;
+}
+
+/* ANIMATION */
+@keyframes scrollMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
