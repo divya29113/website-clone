@@ -31,7 +31,7 @@ function HeroSection() {
 
         <div className="dots"></div>
 
-        <img src="/images/girl.png" className="girl-img" alt="business woman" />
+        <img src="/images/girl.jpg" className="girl-img" alt="business woman" />
       </div>
     </section>
   );
