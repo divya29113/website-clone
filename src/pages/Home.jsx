@@ -4,6 +4,7 @@ import WhoWeAreSection from "../components/home/WhoWeAreSection";
 import ServiceSection from "../components/home/ServiceSection";
 import ScrollText from "../components/home/ScrollText";
 import WorkGallery from "../components/home/WorkGallery";
+import Highlights from "../components/home/Highlights";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <ServiceSection />
       <ScrollText />
       <WorkGallery />
+      <Highlights />
     </>
   );
 }

@@ -1,0 +1,59 @@
+.highlights {
+  padding: 100px 92px;
+  text-align: center;
+}
+
+.hl-sub {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.highlights h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+/* MAIN LAYOUT */
+.hl-grid {
+  display: flex;
+  gap: 30px;
+}
+
+/* LEFT + RIGHT */
+.hl-left,
+.hl-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* CENTER */
+.hl-center {
+  width: 40%;
+}
+
+/* IMAGE STYLES */
+.small {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.big {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* HOVER EFFECT */
+.small,
+.big {
+  transition: 0.4s;
+}
+
+.small:hover,
+.big:hover {
+  transform: scale(1.05);
+}
