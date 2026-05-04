@@ -1,0 +1,101 @@
+.testimonials {
+  padding: 80px 0 120px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonial-marquee {
+  width: max-content;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  animation: clientScroll 18s linear infinite;
+  margin-bottom: 90px;
+}
+
+.testimonial-marquee span {
+  font-size: 44px;
+  font-weight: 800;
+  color: #000;
+  white-space: nowrap;
+}
+
+.testimonial-marquee span:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 1px #999;
+}
+
+.testimonial-marquee b {
+  font-size: 58px;
+  color: #000;
+}
+
+.testimonial-content {
+  position: relative;
+  max-width: 760px;
+  margin: auto;
+  padding: 30px;
+}
+
+.testimonial-content::before {
+  content: "";
+  position: absolute;
+  inset: -60px -160px;
+  background-image: url("/images/world-map.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.client-img,
+.stars,
+.client-review,
+.testimonial-content h4,
+.role {
+  position: relative;
+  z-index: 1;
+}
+
+.client-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #f7a600;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.client-review {
+  font-size: 22px;
+  line-height: 1.45;
+  font-style: italic;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+.testimonial-content h4 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.role {
+  font-size: 13px;
+  color: #666;
+}
+
+@keyframes clientScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35%);
+  }
+}

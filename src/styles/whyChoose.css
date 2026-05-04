@@ -1,0 +1,186 @@
+.why {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 92px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.why-left {
+  width: 40%;
+}
+
+.why-sub {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.why-left h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #000;
+}
+
+.why-grid {
+  width: 55%;
+  position: relative;
+  height: 520px;
+}
+
+.box {
+  position: absolute;
+  width: 170px;
+  height: 120px;
+  border: 1px solid #111;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.box:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-12px);
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+.dark:hover {
+  background: #65c7bd;
+  color: #000;
+  border-color: #65c7bd;
+}
+
+/* exact zig-zag positions */
+.box1 {
+  top: 0;
+  left: 190px;
+}
+
+.box2 {
+  top: 0;
+  left: 440px;
+}
+
+.box3 {
+  top: 135px;
+  left: 0;
+}
+
+.box4 {
+  top: 135px;
+  left: 190px;
+}
+
+.box5 {
+  top: 135px;
+  left: 380px;
+}
+
+.box6 {
+  top: 135px;
+  left: 570px;
+}
+
+.box7 {
+  top: 300px;
+  left: 0;
+}
+
+.box8 {
+  top: 300px;
+  left: 190px;
+}
+.circle {
+  position: absolute;
+  top: 260px;
+  left: 440px;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle:hover {
+  background: #65c7bd;
+  border-color: #65c7bd;
+  transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCircle {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .why {
+    flex-direction: column;
+    padding: 60px 25px;
+  }
+
+  .why-left,
+  .why-grid {
+    width: 100%;
+  }
+
+  .why-left h2 {
+    font-size: 34px;
+  }
+
+  .why-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  .box,
+  .circle {
+    position: static;
+    width: 100%;
+    height: 120px;
+  }
+
+  .circle {
+    border-radius: 0;
+  }
+}
