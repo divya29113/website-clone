@@ -6,7 +6,7 @@ function Contact() {
       {/* CONTACT BANNER */}
       <section className="contact-banner">
         <img
-          src="/images/contact-banner.jpg"
+          src="/images/contact-banner.png"
           alt="Contact Banner"
           className="contact-banner-img"
         />
@@ -112,6 +112,15 @@ function Contact() {
             </button>
           </form>
         </div>
+        <section className="map-section">
+  <iframe
+    className="contact-map"
+    title="Vedhanthi Technologies Map"
+    src="https://www.google.com/maps?q=Vedhanthi%20Technologies%20Private%20Limited%20Coimbatore&output=embed"
+    loading="lazy"
+    allowFullScreen
+  ></iframe>
+</section>
       </section>
     </>
   );

@@ -1,207 +1,325 @@
-/* HERO SECTION */
-
-.contact-hero {
-  height: 320px;
-
-  background-image:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("/images/contact-banner.png");
-
-  background-size: cover;
-  background-position: center;
-
+.contact-banner {
   position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.contact-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-overlay {
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding-left: 120px;
-
-  color: white;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
-.contact-overlay h1 {
-  font-size: 64px;
+.contact-banner-content {
+  position: absolute;
+  left: 17%;
+  bottom: 90px;
+  color: #fff;
+  z-index: 2;
+}
+
+.contact-banner-content h1 {
+  font-size: 72px;
   font-weight: 800;
-
-  margin-bottom: 15px;
 }
 
-.contact-overlay p {
-  font-size: 15px;
-}
-
-.contact-overlay span {
-  color: #66cfc4;
-  margin: 0 8px;
-}
-
-/* MAIN SECTION */
-
-.contact-container {
-  padding: 100px 120px;
-
+.breadcrumb {
   display: flex;
-  gap: 70px;
-
-  background: #fff;
-}
-
-/* LEFT SIDE */
-
-.contact-left {
-  width: 50%;
-}
-
-.contact-subtitle {
-  color: #7d7d7d;
+  gap: 12px;
+  margin-top: 20px;
   font-size: 15px;
+}
+
+.contact-section {
+  padding: 110px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background: #f5f5f5;
+}
+
+.contact-small-title {
+  font-size: 15px;
+  color: #666;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
 .contact-left h2 {
-  font-size: 62px;
-  line-height: 1.05;
+  font-size: 64px;
+  line-height: 1.1;
   font-weight: 800;
-
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.contact-description {
+.contact-desc {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 55px 70px;
+  margin-top: 60px;
+}
+
+.contact-info-card .icon {
+  font-size: 45px;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.contact-info-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-info-card p {
   color: #666;
   line-height: 1.8;
-
-  margin-bottom: 50px;
+  font-size: 15px;
 }
 
-.contact-info-wrapper {
+.follow-section {
+  margin-top: 70px;
+}
+
+.follow-section h5 {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.social-icons {
   display: flex;
-  gap: 40px;
+  gap: 18px;
 }
 
-.contact-box h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.social-icons span {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.contact-box p {
-  color: #666;
+.social-icons span:hover {
+  background: #000;
+  color: #fff;
 }
-
-/* RIGHT SIDE */
 
 .contact-form-box {
-  width: 50%;
-
-  background: #2a0c0c;
-
-  padding: 60px 50px;
-
-  color: white;
+  background: #2b0707;
+  padding: 70px;
+  color: #fff;
 }
 
-.form-subtitle {
-  color: #66cfc4;
-  margin-bottom: 15px;
+.form-small-title {
+  color: #66d3c5;
+  font-size: 15px;
 }
 
 .contact-form-box h2 {
-  font-size: 54px;
+  font-size: 58px;
+  margin: 20px 0;
   font-weight: 800;
-
-  margin-bottom: 20px;
 }
 
-.form-description {
-  color: #ccc;
-  line-height: 1.7;
-
-  margin-bottom: 35px;
-}
-
-/* FORM */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.contact-form-box p {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-
-  padding: 16px;
-
   background: transparent;
-
-  border: 1px solid rgba(255,255,255,0.2);
-
-  color: white;
-
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 18px 22px;
+  margin-bottom: 22px;
+  color: #fff;
   outline: none;
+  font-size: 15px;
 }
 
 .contact-form textarea {
-  height: 130px;
+  height: 160px;
   resize: none;
 }
 
 .contact-form button {
-  width: 180px;
-
-  padding: 16px;
-
+  background: transparent;
   border: none;
-
-  background: #66cfc4;
-
-  color: black;
-
+  color: #66d3c5;
+  font-size: 17px;
   font-weight: 700;
-
   cursor: pointer;
-
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .contact-form button:hover {
-  background: white;
+  transform: translateX(8px);
+  transition: 0.3s;
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-
-  .contact-container {
-    flex-direction: column;
+@media (max-width: 992px) {
+  .contact-section {
+    grid-template-columns: 1fr;
     padding: 70px 25px;
   }
 
-  .contact-left,
-  .contact-form-box {
-    width: 100%;
+  .contact-banner-content {
+    left: 25px;
+    bottom: 60px;
   }
 
-  .contact-overlay {
-    padding-left: 25px;
-  }
-
-  .contact-overlay h1 {
-    font-size: 42px;
+  .contact-banner-content h1 {
+    font-size: 50px;
   }
 
   .contact-left h2,
   .contact-form-box h2 {
-    font-size: 38px;
+    font-size: 42px;
   }
 
-  .contact-info-wrapper {
-    flex-direction: column;
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-box {
+    padding: 40px 25px;
+  }
+}
+/* ================= MAP SECTION ================= */
+
+.map-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.contact-map {
+  width: 70vw !important;
+  height: 650px !important;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+/* BENEFITS SECTION */
+.benefits-section {
+  padding: 100px 90px;
+  background: #fff;
+}
+
+.benefits-title {
+  text-align: center;
+  color: #65c7bd;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px 90px;
+}
+
+.benefit-card {
+  position: relative;
+  height: 310px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+}
+
+.benefit-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: 0.45s ease;
+}
+
+.benefit-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(101, 199, 189, 0.78);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  opacity: 0;
+  transition: 0.45s ease;
+}
+
+.benefit-overlay h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #000;
+}
+
+.benefit-overlay p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #111;
+}
+
+.benefit-card h4 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #000;
+  transition: 0.35s ease;
+}
+
+.benefit-card:hover img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.benefit-card:hover .benefit-overlay {
+  opacity: 1;
+}
+
+.benefit-card:hover h4 {
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .benefits-section {
+    padding: 60px 25px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
