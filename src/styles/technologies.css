@@ -1,0 +1,221 @@
+/* HERO SECTION */
+
+.tech-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/tech-hero.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.tech-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.tech-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.tech-hero-content h1 {
+  font-size: 95px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.tech-line {
+  width: 90px;
+  height: 3px;
+  background: #5ad1c6;
+  margin-bottom: 30px;
+}
+
+.tech-hero-content p {
+  font-size: 26px;
+  line-height: 1.8;
+  color: #f2f2f2;
+}
+
+/* ABOUT SECTION */
+
+.tech-about {
+  padding: 120px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  background: #fff;
+}
+
+.tech-about-left {
+  width: 45%;
+}
+
+.tech-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.tech-image-wrapper img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.tech-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #5ad1c6;
+  top: -25px;
+  left: -25px;
+  z-index: -1;
+}
+
+.tech-about-right {
+  width: 50%;
+}
+
+.tech-about-right span {
+  color: #5ad1c6;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tech-about-right h2 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-line {
+  width: 90px;
+  height: 3px;
+  background: #5ad1c6;
+  margin-bottom: 30px;
+}
+
+.tech-about-right p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* STACK SECTION */
+
+.tech-stack {
+  padding: 110px 90px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.stack-subtitle {
+  color: #5ad1c6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tech-stack h2 {
+  font-size: 55px;
+  margin-top: 15px;
+  margin-bottom: 70px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.tech-card {
+  background: white;
+  padding: 50px 35px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  border: 1px solid #eee;
+}
+
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tech-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+.tech-card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tech-card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* CTA SECTION */
+
+.tech-cta {
+  margin: 100px 90px;
+  padding: 50px 60px;
+  background: #07142d;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.cta-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta-left img {
+  width: 90px;
+  height: 90px;
+}
+
+.cta-left h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.cta-left p {
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.tech-cta button {
+  padding: 18px 40px;
+  border: none;
+  background: #5ad1c6;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tech-cta button:hover {
+  background: white;
+  color: #111;
+}
